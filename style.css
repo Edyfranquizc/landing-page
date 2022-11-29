@@ -5,7 +5,6 @@ body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   text-decoration: none;
   box-sizing: border-box;
   scroll-margin: 10ex;
@@ -17,7 +16,7 @@ img {
   }
 
 .page-produt {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -27,7 +26,7 @@ img {
 /*  Header */
 #header {
   display: flex;
-  max-width: 100%;
+  max-width: 110%;
   flex-direction: column;
   align-items: center;
   padding: 50px 10px 10px;
@@ -36,25 +35,23 @@ img {
   right: 0;
   top: 0;
   background-color: #100129;
-  font-size: 16px;
+  font-size: 18px;
 }
-
-
 .enlace {
 display: flex;
 }
 
 .logo img {
-  height: 100px;
-  width: 150px;
-  border-radius: 100%;
+  height: 130px;
+  width: 140px;
+ 
 }
 
 
 #nav-bar {
   display: flex;
   flex-grow: 1;
-  min-height: 80px;
+  min-height: 100px;
   align-items: center;
   padding-right: 100px;
   
@@ -76,7 +73,7 @@ display: flex;
   padding: 20px;
   color: #C442DD;
   font-family: 'Pontano Sans', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -98,54 +95,7 @@ display: flex;
   #check {
   display: none;
   }
-  @media (max-width: 700px) {
-    .checkbtn {
-        display: block;
-    }
-    #header {
-        width: 100%;
-        position: relative;
-    }
-    .enlace {
-        display: block;
-        display: flex;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-right: 40px;
-        
-    }
-    #nav-bar ul {
-        position: absolute;
-        width: 90%;
-        height: 100vh;
-        background: violet;
-        line-height: 2;
-        top: 195px;
-        left: -120%;
-        text-align: center;
-        transition: all 0.4s;
-    }
-    #nav-bar ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    #nav-bar ul li a {
-        font-size: 18px;
-        color:#fefffe;
-  
-    }
-    #nav-bar ul li a:hover {
-        color: #3054f7;
-        padding: 20px;
-    }
-    .active:hover {
-        background: none;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
-    }
+
 /* Form */
 .form {
   max-width: 100%;
@@ -199,13 +149,14 @@ font-size: 40px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 30px;
-  padding-bottom:40px;
+  justify-content:center;
+  text-align: justify;
+  margin-top: 5rem;
+  padding-bottom:3rem;
 }
 
 #inicio .card {
-  padding-top: 5rem;
+  padding-top: 2rem;
   min-width: 40px;
   display: inline-flex;
   justify-content: space-around;
@@ -231,37 +182,52 @@ font-size: 40px;
   max-width: 100%;
   text-align: justify;
   margin-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   scroll-margin: 30ex;
   
 }
 .setup-gamer{
-  width: 100%;
+display: flex;
+width:100vh;
+height: 80vh;
+justify-content: center;
+align-items: center;
+margin: auto;
+padding-top: 5rem;
+padding-bottom: 5rem;
 }
 /* Blog*/
 #blog{
- text-align: justify;
- margin-top: 2rem;
- padding-bottom:3rem;
- scroll-margin: 30ex;
-}
+  text-align: justify;
+  margin-top: 2rem;
+  padding-bottom:2rem;
+  scroll-margin: 30ex;
+  }
 
 #video {
-  width: 100%;
-  display: flex;
-  margin-top: 50px;
-  margin-top: 40px;
-  padding-bottom:50px;
+  width:100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* tienda*/
 #tienda{
-  width: 102%;
+  max-width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  padding-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   scroll-margin: 30ex;
+  font-size: 15px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#tienda h2{
+  font-size: 1.2rem;
 }
 
 #tienda .card {
@@ -269,7 +235,7 @@ font-size: 40px;
   margin-bottom: 15px;
   border: 1px solid #000;
   max-width: 340px;
-  width: 90%;
+  width: 100%;
   border-radius: 4px;
   text-align: center;
 }
@@ -284,14 +250,17 @@ font-size: 40px;
   font-weight: bold;
   margin: 0;
   margin-bottom: 15px;
+  
 }
 
 #tienda .card strong {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #tienda .card img{
-  width: 280px;
+  width: 80%;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 #tienda .card button {
@@ -336,21 +305,18 @@ font-size: 40px;
 
 /* Footer*/
 #footer {
-  width: 100%;
-  height: 100%;
-  padding: 50px 10px 10px;
-  margin-top:30px ;
-  padding-bottom: 30px;
-  scroll-margin: 30ex;
- 
-  text-align: center;
-  background-color: #100129;
-  color: white;
- 
+margin-top: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+text-align: center;
+background-color: #100129;
+color: white;
+font-size:15px;
 }
 
 #footer p{
-  font-size: 12px;
+  font-size: 10px;
+  text-align: center;
 }
 
 #footer > ul {
@@ -359,14 +325,16 @@ font-size: 40px;
 }
 
 #footer > ul li {
-  display: inline;
+  display: flex;
 }
 
 #footer > ul li:not(last-child) {
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
+
 
 #footer > ul li a {
   color:#C442DD;
@@ -383,15 +351,110 @@ font-size: 40px;
 @media (min-width: 550px) {
   #inicio .card .icon {
     display: block;
+    
   }
 
   #inicio .card .content {
-    text-align: left;
+    text-align: justify;
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 700px) {
+  .checkbtn {
+      display: block;
+  }
   #header {
+    max-width: 100%;
+    position: fixed;
+    
+  }
+  .logo img {
+    width: 150px;
+    height: 140px;
+    border-radius: 100%;
+  }
+  
+  .enlace {
+      display: block;
+
+      margin-left: 60px;
+      margin-top: 10px;
+      margin-right:-70px; 
+      margin-bottom: 50px; 
+  }
+  #nav-bar ul {
+      position: absolute;
+      width: 95%;
+      height: 70vh;
+      
+      background: violet;
+      line-height: 2;
+      top: 195px;
+      right: 200%;
+      text-align: center;
+      transition: all 0.4s;
+  }
+  #nav-bar ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 30px 90px 10px;
+      line-height: 15px;
+      text-align: center;
+      border-bottom: 3px  inset  rgb(255, 255, 255); 
+  }
+  #nav-bar ul li a {
+      font-size: 18px;
+      color:#fefffe;
+      
+  }
+  #nav-bar ul li a:hover {
+      color: #3054f7;
+      padding: 20px;
+  }
+  .active:hover {
+      background: none;
+  }
+  #check:checked ~ ul {
+      left: 0;
+  }
+  }
+
+  @media (max-width: 700px) {
+    .setup-gamer {
+      min-width: 80%;
+      height: 50%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    #video {
+      min-width:100%;
+      height: 100%; 
+    }
+  }
+
+@media (max-width: 700px) {
+  #tienda {
+    width: 102%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    scroll-margin: 30ex;
+    font-size: 15px;
+    
+  }
+}
+
+@media (max-width: 700px) {
+  #footer {
+    font-size: 12px;
+  }
+}
+  
+
+/* @media (min-width: 600px) { 
+   #header {
     flex-direction: row;
     left: 5%;
     right: 5%;
@@ -412,20 +475,8 @@ font-size: 40px;
     margin-right: 0;
   }
 }
-
-@media (min-width: 800px) {
-  #tienda {
-    flex-direction: row;
-    align-self: center;
-  }
-
-  #tienda .card:not(last-child) {
-    margin-right: 15px;
-  }
-}
-
-
-
+  */
+ 
 
 
 
