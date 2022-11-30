@@ -8,6 +8,7 @@ body{
   text-decoration: none;
   box-sizing: border-box;
   scroll-margin: 10ex;
+  font-size: 16px;
   
 }
 
@@ -18,7 +19,7 @@ img {
 .page-produt {
   max-width: 90%;
   margin: auto;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -145,26 +146,25 @@ font-size: 40px;
 
 /*  inicio */
 #inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  text-align: justify;
-  margin-top: 5rem;
-  padding-bottom:3rem;
+margin: auto;
+padding-top: 5rem;
+padding-bottom: 2rem;
+padding-left: 2rem;
+padding-right: 2rem;
+text-align: justify;
 }
 
 #inicio .card {
-  padding-top: 2rem;
-  min-width: 40px;
-  display: inline-flex;
-  justify-content: space-around;
+padding-top: 2rem;
+padding-bottom: 5rem;
+min-width: 40px;
+display: inline-flex;
+border: none;
 }
 
 #inicio .card .icon {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   width: 80px;
   height: 60px;
   line-height: 60px;
@@ -242,19 +242,19 @@ padding-bottom: 5rem;
 
 #tienda .card h2 {
   background-image: linear-gradient(to bottom, #12b7c7, #009ec5, #0084bf, #0069b3, #004c9f, #22409a, #373394, #47218a, #562197, #661fa4, #761ab1, #8810bd);
-  color: white;
-  color: white;
-  padding: 15px 0;
+  color: #fefffe;
+  padding: 20px 0;
   width: 100%;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
   margin-bottom: 15px;
   
+  
 }
 
 #tienda .card strong {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #tienda .card img{
@@ -276,10 +276,13 @@ padding-bottom: 5rem;
 }
 
 /* buttons*/
-
+#redes-sociales{
+  text-align: center;
+  scroll-margin: 30ex;
+}
 .buttons {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   min-width: 30px;
   display: flex;
   justify-content: space-around;
@@ -347,8 +350,15 @@ align-items: center;
   
 }
 /* ======== Media query ========*/
-
-@media (min-width: 550px) {
+@media (max-width: 700px) {
+  body{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  #inicio {
+    font-size: 0.80rem;
+    }
   #inicio .card .icon {
     display: block;
     
@@ -389,8 +399,8 @@ align-items: center;
       
       background: violet;
       line-height: 2;
-      top: 195px;
-      right: 200%;
+      top: 200px;
+      right: -200%;
       text-align: center;
       transition: all 0.4s;
   }
@@ -427,6 +437,22 @@ align-items: center;
   }
 
   @media (max-width: 700px) {
+    .form {
+      max-width: 80%;
+      justify-content: center;
+      align-items: center;
+      padding-left: 2rem;
+    }
+  }
+    
+    .form h1{
+      font-size: 30px;
+      padding-top: 2rem;
+      text-align: center;
+      }
+  
+
+  @media (max-width: 700px) {
     #video {
       min-width:100%;
       height: 100%; 
@@ -441,8 +467,7 @@ align-items: center;
     margin-top: 2rem;
     padding-bottom: 2rem;
     scroll-margin: 30ex;
-    font-size: 15px;
-    
+    font-size: 15px; 
   }
 }
 
@@ -451,32 +476,6 @@ align-items: center;
     font-size: 12px;
   }
 }
-  
-
-/* @media (min-width: 600px) { 
-   #header {
-    flex-direction: row;
-    left: 5%;
-    right: 5%;
-  }
-
-  #nav-bar ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  #nav-bar ul li {
-    display: inline;
-    margin-right: 50px;
-  }
-
-  #nav-bar ul li:last-child {
-    margin-right: 0;
-  }
-}
-  */
- 
 
 
 
