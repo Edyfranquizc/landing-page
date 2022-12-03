@@ -7,7 +7,7 @@ body{
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-size: 16px; 
+  font-size: 12px; 
 }
 
 
@@ -225,7 +225,7 @@ padding-bottom: 1rem;
 padding-left: 2rem;
 padding-right: 2rem;
 text-align: justify;
-font-size: 1rem;
+font-size: 0-70rem;
 }
 
 #inicio .card {
