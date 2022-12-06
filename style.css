@@ -36,7 +36,7 @@ img {
   right: 0;
   top: 0;
   background-color: #4e2889;
-  font-size: 18px;
+ 
 }
 
 .logo{
@@ -44,7 +44,7 @@ img {
   display: flex;
 }
 .logo img {
-  width: 140px;
+  width: 150px;
   padding-right:10% ;
   border-radius: 100%;
 }
@@ -55,7 +55,6 @@ img {
   min-height: 80px;
   align-items: center;
   padding-right: 100px;
-
 
 }
 
@@ -68,6 +67,8 @@ img {
 #nav-bar ul li {
   float: left;
   margin-bottom: 20px;
+  margin-left: 50px;
+  text-align: center;
 }
 
 #nav-bar ul li a {
@@ -75,10 +76,9 @@ img {
   padding: 20px;
   color: #C442DD;
   font-family: 'Pontano Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
-
 }
 
 
@@ -106,7 +106,7 @@ font-size: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   margin-top: 20px;
 }
@@ -427,7 +427,7 @@ align-items: center;
 
   
   h2{
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 }
 
