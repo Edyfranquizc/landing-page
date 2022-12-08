@@ -7,7 +7,7 @@ body{
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-size: 16px; 
+  font-size: 20px; 
 }
 
 
@@ -76,7 +76,7 @@ img {
   padding: 20px;
   color: #C442DD;
   font-family: 'Pontano Sans', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -142,7 +142,6 @@ font-size: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-weight: bold;
   text-align: justify;
 }
   
@@ -179,8 +178,6 @@ font-size: 40px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   scroll-margin: 25ex;
-  font-size: 0.80;
-  
 }
 .setup-gamer{
 display: flex;
@@ -201,12 +198,12 @@ padding-bottom: 5rem;
   }
 
 #video {
-  width:100%;
-  height: 50vh;
+  max-width:100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 5rem; 
 }
 
 /* tienda*/
@@ -220,8 +217,7 @@ padding-bottom: 5rem;
   scroll-margin: 30ex;
   font-size: 15px;
   padding-top: 3rem;
-  padding-bottom: 5rem;
-  
+  padding-bottom: 5rem; 
 }
 #tienda h2{
   font-size: 1.2rem;
@@ -345,15 +341,15 @@ align-items: center;
   
 }
 /* ======== Media query ========*/
-
-  @media (min-width: 700px) {
+    
+  @media screen and (min-width: 700px) {
     .setup-gamer {
       min-width: 80%;
       height: 50%;
     }
   }
 
-  @media (max-width: 700px) {
+  @media screen and (max-width: 700px) {
     .form {
       max-width: 100%;
       justify-content: center;
@@ -379,14 +375,18 @@ align-items: center;
       
     }
 
-  @media (max-width: 700px) {
+  @media screen and (min-width: 700px) {
     #video {
-      min-width:100%;
-      height: 100%; 
+      width:100%;
+      height: 60vh;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
   }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   #tienda {
     max-width: 100%;
     display: flex;
@@ -410,20 +410,17 @@ align-items: center;
   }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   #footer {
     font-size: 12px;
   }
-  
-  
 }
 
 
-@media (min-width: 700px) {
+@media screen and (max-width: 700px) {
   body{
     font-size: 1rem;
   }
-
 
   
   h2{
